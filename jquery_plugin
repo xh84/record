@@ -8,7 +8,7 @@ http://jquerypicture.com/
 mobifyjs
 lazyload.js：实现图片异步载入
 BttrLazyLoading Responsive Lazy Loading plugin for JQuery
-
+七牛云存储有js-sdk可以实现用js生成缩略图，但是可能他的js代码是在服务器端进行处理的https://github.com/qiniu/js-sdk
 
 
 1、modify.js可以实现动态压缩图片，动态生成不同大小的缩略图，但是支持的浏览器有限，原始图片没有被下载
