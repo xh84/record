@@ -1,0 +1,55 @@
+轻量响应式web框架
+1、https://github.com/IcaliaLabs/furatto
+2、https://github.com/responsivebp/responsive
+3、https://github.com/uikit/uikit国人制作
+
+
+一年前，第一次接触响应式Web设计是通过一本书《响应式Web设计-HTML5和CSS3实践》（英文名为：Responsive Web Design width HTML5 and CSS3）作者：Ben Frain。这是一本很不错的书，简单且容易理解，却包含了大量的资源，书中提到的很多案例网站都值得一看。
+
+虽然，书中对HTML5的讲解只是初略的入门，但是，却会给看的人很大的信心去学好它。
+
+于是，我开始在项目中把 % 疯狂地应用到自适应的网页制作中。然后，由于公司所有制作的网页都需要兼容IE7，甚至更低版本的浏览器，HTML5响应式慢慢淡出了我的世界。因为项目中用的少，而没法全心去研究。
+
+也许是因为接触和实践的并不多，一开始，我天真的以为响应式就是“媒体查询”精妙应用，甚至很多开源的框架（像Bootstrap）直接就能实现很多酷炫的效果。直至最近，公司新版官网采用全响应式设计，发现有些东西实现起来并没有那么简单，做一个首页花了将近两周（虽然中间还有别的工作）。在和同事的交流和讨论中，我开始理解到响应式的真正目的是为了网站在不同设备中显示出最佳效果。现在项目还在进行中，期待上线后呈献给用户完美的体验。
+
+以下是我在项目开发和那本书中总结出来的一些资源：
+
+1、HTML5解决video自适应问题
+http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/
+
+2、Modernizr按需加载
+http://modernizr.com/
+
+（Modernizr is a JavaScript library that detects HTML5 and CSS3 features in the user’s browser.）
+
+3、Selectivizr（修正CSS3在IE6-8）
+http://selectivizr.com/
+
+selectivizr is a JavaScript utility that emulates CSS3 pseudo-classes and attribute selectors in Internet Explorer 6-8. Simply include the script in your pages and selectivizr will do the rest.
+
+<script type="text/javascript" src="[JS library]"></script>
+<!--[if (gte IE 6)&(lte IE 8)]>
+  <script type="text/javascript" src="selectivizr.js"></script>
+  <noscript><link rel="stylesheet" href="[fallback css]" /></noscript>
+<![endif]--> 
+4、为CSS3自动添加私有前缀属性（针对IE以外的浏览器 firefox、Chrome..）
+http://leaverou.github.io/prefixfree/
+
+例如：
+
+box-shadow:...;
+-moz-box-shadow:...;
+-webkit-box-shadow:...;
+-o-box-shadow:...;
+就只需要写 box-shadow:...; 了
+
+5、图片自适应大小
+http://adaptive-images.com/
+
+6、网页嵌入特殊字体（icon字体）
+https://icomoon.io/#icons-icomoon
+
+7、使媒体查询在IE6-8有效 （放在服务器上才有效果）Respond.js
+A fast & lightweight polyfill for min/max-width CSS3 Media Queries (for IE 6-8, and more)
+http://alistapart.com/article/responsive-web-design
+下载地址：https://github.com/scottjehl/Respond
