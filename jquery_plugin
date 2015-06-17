@@ -12,6 +12,6 @@ BttrLazyLoading Responsive Lazy Loading plugin for JQuery
 
 
 1、modify.js可以实现动态压缩图片，动态生成不同大小的缩略图，但是支持的浏览器有限，原始图片没有被下载
-2、一般的做法，需要为每张图片生成不同的分辨率的副本，可以通过命令行工具，例如 Image Optim或使用Photoshop的“存储为web所用格式”功能，然后用jquery某些插件针对不同屏幕大小输出不同大小图片。但是这样占用空间
+2、一般的做法，需要为每张图片生成不同的分辨率的副本，可以通过命令行工具，例如 Image Optim或使用Photoshop的“存储为web所用格式”功能，（还可以借助lua_nginx module调用GraphicsMagick命令生存生存缩略图片），然后用jquery某些插件针对不同屏幕大小输出不同大小图片。但是这样占用空间
 
 
