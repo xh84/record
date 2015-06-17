@@ -4,3 +4,5 @@ RequireJs  可以按需、并行、延时载入js库
 http://kenwheeler.github.io        slider图片
 Lazy Load, 延迟加载图片的 jQuery 插件
 https://github.com/scottjehl/Respond      支持ie6-8
+http://jquerypicture.com/  
+mobifyjs
